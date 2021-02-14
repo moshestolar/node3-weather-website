@@ -15,7 +15,8 @@ const forecast = ( latitude, longitude, callback ) => {
                location:         body.location.name,
                weather_nutshell: body.current.weather_descriptions[0],
                temperature:      body.current.temperature,
-               feels_like:       body.current.feelslike
+               feels_like:       body.current.feelslike,
+               humidity:         body.current.humidity
             })
             //callback(undefined, body.location.name + ':  ' + body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress out. There is a ' + body.currently.precipProbability + '% chance of rain.')
         }

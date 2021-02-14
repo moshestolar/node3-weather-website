@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else{
                 messageOne.textContent = data.location + ' => ' + data.forecast.location
-                messageTwo.textContent = data.forecast.weather_nutshell + '.  It is ' + data.forecast.temperature + ' degrees out and feels like ' + data.forecast.feels_like +' degrees'
+                messageTwo.textContent = data.forecast.weather_nutshell + '. It is ' + data.forecast.temperature + ' degrees out and feels like ' + data.forecast.feels_like +' degrees. Humidity is ' + data.forecast.humidity + '%.'
             }
         })
     })
